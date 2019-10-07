@@ -46,5 +46,7 @@ int main(void) {
         C = 0x3F;
     }
       PORTC = C;
+    }
     return 1;
+    
 }
