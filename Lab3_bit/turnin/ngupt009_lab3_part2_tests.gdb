@@ -41,7 +41,7 @@ checkResult
 
 # Add tests below
 
-test "PINA: 0x01, PINB: 0x03 => PORTC: 3" 
+test "PINA: 0x01, PI: 0x03 => PORTC: 3" 
 setPINA 0x01
 setPINB 0x03
 continue 2
