@@ -26,6 +26,7 @@ int main(void) {
     while(1){
         A = PINA; //input PINA all of A
         
+    
 
     if(A == 0x01 || A = 0x02){
         C = 0x20;
@@ -44,6 +45,9 @@ int main(void) {
     }
      else if(A == 0x0D || A == 0x0E || A == 0x0F){
         C = 0x3F;
+    }
+    if(A == 0x30){
+          C = 0x80;
     }
       PORTC = C;
     }
