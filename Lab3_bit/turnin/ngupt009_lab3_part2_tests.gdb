@@ -41,32 +41,40 @@ checkResult
 
 # Add tests below
 
-test "PINA: 0x01, PI: 0x03 => PORTC: 3" 
+test "PINA: 0x01 => PORTC: 0x20" 
 setPINA 0x01
-setPINB 0x03
 continue 2
-expectPORTC 3
+expectPORTC 0x20
 checkResult
 
-test "PINA: 0x08, PINB: 0x04 => PORTC: 2" 
+test "PINA: 0x03 => PORTC: 0x30" 
+setPINA 0x03
+continue 2
+expectPORTC 0x30
+checkResult
+
+test "PINA: 0x05 => PORTC: 0x38" 
+setPINA 0x05
+continue 2
+expectPORTC 0x38
+checkResult
+
+test "PINA: 0x08 => PORTC: 0x3C" 
 setPINA 0x08
-setPINB 0x04
 continue 2
-expectPORTC 2
+expectPORTC 0x3C
 checkResult
 
-test "PINA: 0x80, PINB: 0x01 => PORTC: 2" 
-setPINA 0x80
-setPINB 0x01
+test "PINA: 0x0A => PORTC: 0x3E" 
+setPINA 0x0A
 continue 2
-expectPORTC 2
+expectPORTC 0x3E
 checkResult
 
-test "PINA: 0x0F, PINB: 0x0F => PORTC: 8" 
+test "PINA: 0x0F => PORTC: 0x3F" 
 setPINA 0x0F
-setPINB 0x0F
 continue 2
-expectPORTC 8
+expectPORTC 0x3F
 checkResult
 
 
