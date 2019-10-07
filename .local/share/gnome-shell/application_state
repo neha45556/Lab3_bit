@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="google-chrome.desktop" open-window-count="1" score="105" last-seen="1570467937"/>
+    <application id="org.gnome.gedit.desktop" open-window-count="1" score="0" last-seen="1570466540"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="84" last-seen="1570467906"/>
+  </context>
+</application-state>

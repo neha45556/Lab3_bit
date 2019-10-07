@@ -1,0 +1,36 @@
+{
+   "checksum": "ceda50563dd6cd40580f5c2de089f716",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13214941467376021",
+            "id": "5",
+            "name": "EECS120b Lab 03 - BitManip (Vehicle sensors) - Google Docs",
+            "type": "url",
+            "url": "https://docs.google.com/document/d/1zl9A98YEolKTGjHaFfEbjCjWWDZPL-a67FoUGXYbI94/edit"
+         } ],
+         "date_added": "13214940143791495",
+         "date_modified": "13214941467376021",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13214940143791521",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13214940143791522",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
