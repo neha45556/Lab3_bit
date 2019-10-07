@@ -23,7 +23,7 @@ int main(void) {
     DDRB = 0x00; PORTB = 0xFF;
     DDRC = 0xFF; PORTC = 0x00;
     unsigned char i;
-    unsigned char cnt;
+    unsigned char cnt = 0;
     unsigned char A = 0x00;
     unsigned char B = 0x00;
    
@@ -32,8 +32,9 @@ int main(void) {
     while (1) {
        A = PINA;
        B = PINB;
-       
+       cnt = 0;
        for(i = 0; i < 8; i++){
+           
            if(GetBit(A,i)){
                cnt++;
            }
@@ -41,7 +42,9 @@ int main(void) {
            if(GetBit(B,i)){
                cnt++;
            }
-          PORTC =cnt;    
+          
+        }
+        PORTC =cnt; 
     }
     return 1;
 }
