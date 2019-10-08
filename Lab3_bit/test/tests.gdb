@@ -63,7 +63,7 @@ expectPORTC 0x3F
 checkResult
 
 test "PINA: 0x31 => PORTC: 0xE0" 
-setPINA 0x01
+setPINA 0x31
 continue 2
 expectPORTC 0xE0
 checkResult 
