@@ -28,11 +28,11 @@ int main(void) {
         
     
 
-    if(A == 0x01 || A = 0x02){
-        C = 0x20;
+    if(A == 0x01 || A == 0x02){
+        C = 0x60;
     }
-    else if(A == 0x03 || A =0x04){
-        C = 0x30;
+    else if(A == 0x03 || A == 0x04){
+        C = 0x70;
     }
     else if(A == 0x05 || A == 0x06){
         C = 0x38;
@@ -46,8 +46,8 @@ int main(void) {
      else if(A == 0x0D || A == 0x0E || A == 0x0F){
         C = 0x3F;
     }
-    if(A == 0x30){
-          C = 0x80;
+    if((PINA >> 4) == 0x03){
+          C = C | 0x80;
     }
       PORTC = C;
     }
