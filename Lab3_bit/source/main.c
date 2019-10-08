@@ -24,7 +24,7 @@ int main(void) {
     unsigned char C = 0x00; 
 
     while(1){
-        A = PINA; //input PINA all of A
+        A = PINA & 0x0F; //input PINA all of A
         
     
 
