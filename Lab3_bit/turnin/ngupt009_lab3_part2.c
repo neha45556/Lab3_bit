@@ -27,10 +27,10 @@ int main(void) {
         A = PINA; //input PINA all of A
         
 
-    if(A == 0x01 || A = 0x02){
+    if(A == 0x01 || A == 0x02){
         C = 0x60;
     }
-    else if(A == 0x03 || A =0x04){
+    else if(A == 0x03 || A == 0x04){
         C = 0x70;
     }
     else if(A == 0x05 || A == 0x06){
