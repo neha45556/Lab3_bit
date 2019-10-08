@@ -28,10 +28,10 @@ int main(void) {
         
 
     if(A == 0x01 || A = 0x02){
-        C = 0x20;
+        C = 0x60;
     }
     else if(A == 0x03 || A =0x04){
-        C = 0x30;
+        C = 0x70;
     }
     else if(A == 0x05 || A == 0x06){
         C = 0x38;
