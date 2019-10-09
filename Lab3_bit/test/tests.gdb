@@ -26,47 +26,26 @@
 echo ======================================================\n
 echo Running all tests..."\n\n
 
-test "PINA: 0x31 => PORTC: 0xE0" 
-setPINA 0x31
+test "PINB: 0x01; PIND = 0x00 => PORTB: 0x00" 
+setPINB 0x01
+setPIND 0x00
 continue 2
-expectPORTC 0xE0
+expectPORTB 0x00
 checkResult
 
-test "PINA: 0x73 => PORTC: 0x70" 
-setPINA 0x73
+test "PINB: 0x00; PIND = 0xAE => PORTB: 0x00" 
+setPINB 0x01
+setPIND 0xAE
 continue 2
-expectPORTC 0x70
+expectPORTB 0x02
 checkResult
 
-test "PINA: 0x05 => PORTC: 0x38" 
-setPINA 0x05
+test "PINB: 0x01; PIND = 0x0F => PORTB: 0x04" 
+setPINB 0x01
+setPIND 0x0F
 continue 2
-expectPORTC 0x38
+expectPORTB 0x04
 checkResult
-
-test "PINA: 0x08 => PORTC: 0x3C" 
-setPINA 0x08
-continue 2
-expectPORTC 0x3C
-checkResult
-
-test "PINA: 0x0A => PORTC: 0x3E" 
-setPINA 0x0A
-continue 2
-expectPORTC 0x3E
-checkResult
-
-test "PINA: 0x0F => PORTC: 0x3F" 
-setPINA 0x0F
-continue 2
-expectPORTC 0x3F
-checkResult
-
-
-
-
-
-
 
 # Report on how many tests passed/tests ran
 set $passed=$tests-$failed
