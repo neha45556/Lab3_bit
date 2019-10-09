@@ -55,9 +55,9 @@ expectPORTC 8
 checkResult
 
 
-test "PINA: 0x26, PINB: 0x02 => PORTC: 0x06" 
+test "PINA: 0x28, PINB: 0x02 => PORTC: 0x08" 
 setPINA 0x02
-setPINB 0x06
+setPINB 0x08
 continue 2
 expectPORTC 8
 checkResult
