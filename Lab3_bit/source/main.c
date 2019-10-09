@@ -13,28 +13,27 @@
 #endif
 
 
-        
+ int main(void){
 
-int main(void){
-	DDRA = 0x00; PORTA = 0xFF;
-	DDRB = 0xFF; PORTB = 0x00;
-	DDRC = 0xFF; PORTC = 0x00;
+	DDRD = 0x00; PORTD = 0xFF;
+	DDRB = 0xFE; PORTB = 0x00;
 
-unsigned char A = 0x00;
-unsigned char B = 0x00;
-unsigned char C = 0x00;
 
-while(1){
-	A = PINA;
+	unsigned char w = 0X00;
+
+	while(1){
+		w = PIND + PINB;
 	
-	B =  A >> 4 ;
-	C = A << 4;
-
-	
-	PORTB = B;
-	PORTC = C;
-        
-         
-     }
-return 1;
+	if(w >= 70) {
+		PORTB = 0x02;
+	}
+	else if(w > 5){
+		PORTB = 0x04;
+	}
+	else{
+		PORTB = 0x00;
+	}
 }
+	return 1;
+}
+
