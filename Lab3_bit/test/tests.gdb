@@ -43,7 +43,7 @@ checkResult
 test "PINA: 0x82  => PORTB: 0x08; PORTC: 0x20" 
 setPINA 0x82
 continue 2
-expectPORTB 0x80
+expectPORTB 0x08
 expectPORTC 0x20
 checkResult
 
@@ -55,11 +55,11 @@ expectPORTC 0x40
 checkResult
 
 
-test "PINA: 0x28 => PORTB: 0x02; PORTC: 0x08" 
-setPINA 0x28
+test "PINA: 0x21 => PORTB: 0x02; PORTC: 0x10" 
+setPINA 0x21
 continue 2
 expectPORTB 0x02
-expectPORTC 0x80
+expectPORTC 0x10
 checkResult
 
 
