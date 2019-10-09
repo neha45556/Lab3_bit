@@ -27,8 +27,8 @@ unsigned char C = 0x00;
 while(1){
 	A = PINA;
 	
-	B = ( A & 0x0F ) >> 4 ;
-	C = ( A & 0xF0) << 4;
+	B =  A >> 4 ;
+	C = A << 4;
 
 	
 	PORTB = B;
@@ -38,11 +38,3 @@ while(1){
      }
 return 1;
 }
-// 	while(1){
-        
-//         PORTB = (PINA >> 4) | 0x0;
-//         PORTC = (PINA << 4);
-//     }
-// 	return 1;
-//}
-
